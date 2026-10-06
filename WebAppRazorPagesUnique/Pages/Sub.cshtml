@@ -1,0 +1,32 @@
+﻿@page
+@model WebAppRazorPagesUnique.Pages.SubModel
+@{
+}
+
+<form method="post">
+<table>
+    <tr>
+        <td>
+            Enter x
+        </td>
+        <td>
+            <input type="number" name="val1" />   
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Enter y
+        </td>
+        <td>
+            <input type="number" name="val2" />   
+        </td>
+    </tr>
+    <tr>
+        <td >
+            <input type="submit" value="Submit" />
+        </td>
+        <td>
+           Res is : @TempData["res"]
+        </td>
+</table>
+</form>
