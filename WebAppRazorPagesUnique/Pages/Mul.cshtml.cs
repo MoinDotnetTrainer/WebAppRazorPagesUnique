@@ -6,7 +6,7 @@ namespace WebAppRazorPagesUnique.Pages
     public class MulModel : PageModel
     {
         [BindProperty]
-        public int val1 { get; set; }
+        public int val1 { get; set; } // prop 
 
         [BindProperty]
         public int val2 { get; set; }
