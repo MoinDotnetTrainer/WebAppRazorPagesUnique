@@ -28,7 +28,7 @@
                             Please login to your account
                         </p>
 
-                        <form>
+                        <form method="post">
 
                             <!-- Email -->
                             <div class="mb-3">
@@ -39,7 +39,7 @@
                                        class="form-control form-control-lg"
                                        id="email"
                                        placeholder="Enter your email"
-                                       required>
+                                       required asp-for="_login.Email">
                             </div>
 
                             <!-- Password -->
@@ -51,7 +51,7 @@
                                        class="form-control form-control-lg"
                                        id="password"
                                        placeholder="Enter your password"
-                                       required>
+                                       required asp-for="_login.Password">
                             </div>
 
 
@@ -73,6 +73,7 @@
                                class="text-primary fw-semibold text-decoration-none">
                                 Register
                             </a>
+                            @ViewData["msg"]
                         </div>
 
                     </div>

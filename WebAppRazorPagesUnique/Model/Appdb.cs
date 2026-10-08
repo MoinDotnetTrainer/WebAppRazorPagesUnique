@@ -13,7 +13,9 @@ namespace WebAppRazorPagesUnique.Model
 
         public DbSet<UsersModel> Users { get; set; }
 
-     public DbSet<DeptModel> Dept { get; set; }
+        public DbSet<DeptModel> Dept { get; set; }
+
+
         //Users
         //ORM C# enetity class with db table
 
